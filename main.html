@@ -8,7 +8,19 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+    <h1>Feedback Form</h1>
+	<form action="/submit" method="post">
+		<label for="name">Enter your Name</label>
+		<input minlength="3" maxlength="50" required id="name" type="text" name="name" placeholder="Enter your name"><br><br>
+	<label for="portfolio" >Enter your portfolio</label>
+		<input  required id="portfolio" type="url" name="portfolio" placeholder="Enter your portfolio"><br><br>
+	<label for="favColor">Enter your favColor </label>
+		<input type="color" name="favColor" id="favColor"><br><br>
+	<label for="likeness" >Enter your likeness</label>
+		<input type="range" name="likeness" id="likeness"min="1" max="100">
+		<button>Submit</button>
+	</form>
+	<script type="text/javascript" src="./script.js">
 </script>
 
 </body>
